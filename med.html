@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Disease Suggestions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Patient Disease Management</h1>
+
+    <!-- Input fields for patient details -->
+    <div>
+        <label for="patient-name">Patient Name:</label>
+        <input type="text" id="patient-name" placeholder="Enter patient name">
+    </div>
+
+    <div>
+        <label for="disease-input">Disease:</label>
+        <input type="text" id="disease-input" placeholder="Enter disease">
+    </div>
+
+    <!-- Buttons for actions -->
+    <div>
+        <button onclick="getSuggestions()">Get Suggestions</button>
+        <button onclick="getPatientData()">Retrieve Patient Data</button>
+    </div>
+
+    <!-- Sections to display the suggestions -->
+    <div id="medicine-suggestions"></div>
+    <div id="diet-recommendations"></div>
+    <div id="dos-donts"></div>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
